@@ -25,6 +25,7 @@ android {
             debuggable true               // Enable debugging and allow debugging tools
             minifyEnabled false           // Disable code minification for easier debugging
             shrinkResources false         // Disable resource shrinking for easier debugging
+            proguardFiles '-keep class timber.log.** { *; }'
 
         }
         release {
@@ -40,6 +41,7 @@ android {
         jvmTarget = '17'
     }
     buildFeatures {
+        buildConfig true
         viewBinding true
         dataBinding true
     }

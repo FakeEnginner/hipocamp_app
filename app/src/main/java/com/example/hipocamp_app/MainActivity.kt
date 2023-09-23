@@ -11,13 +11,12 @@ class MainActivity : AppCompatActivity() {
     var rooted = rooted()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        if(!rooted.isRootedDevice()){
-            Timber.tag("Phonevgjgv").e("Hello")
-        }else {
-            Timber.tag("Phonevjh").e("Baby")
-        }
         setContentView(R.layout.activity_main)
+        if(!rooted.isRootedDevice()){
+            Timber.tag("Phonevjsd").e("Phone is not Rooted")
+        }else {
+            Timber.tag("Phonevjsd").e("Phone is Rooted")
+        }
 
     }
 
