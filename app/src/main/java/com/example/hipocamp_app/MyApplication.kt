@@ -1,7 +1,6 @@
 package com.example.hipocamp_app
 
 import android.app.Application
-import com.example.hipocamp_app.BuildConfig
 import android.os.Build
 import timber.log.Timber
 
@@ -13,4 +12,5 @@ class MyApplication : Application() {
         }
     }
 }
+
 
