@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import com.example.hipocamp_app.privacy.developerOption
 import com.example.hipocamp_app.privacy.rooted
 import com.example.hipocamp_app.ui.login.login
+import com.example.hipocamp_app.utils.InternetConnectivity
 import com.example.hipocamp_app.utils.developer_option
 import com.example.hipocamp_app.utils.rooted_option
 import timber.log.Timber
@@ -40,6 +41,16 @@ class MainActivity : AppCompatActivity() {
             Timber.tag("PhoneStatus").e("Phone is Rooted")
             val rooted = rooted_option()
             replaceFragment(rooted)
+        }
+
+        val internetConnectivity = InternetConnectivity()
+        val context = applicationContext
+        if (internetConnectivity.isNetworkAvailable(context)) {
+            // Internet is available
+            // Perform network-related tasks here
+        } else {
+            // No internet connection
+            // Handle the case where there is no internet connectivity
         }
 
     }
