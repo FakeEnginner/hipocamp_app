@@ -1,16 +1,17 @@
 package com.example.hipocamp_app
 
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.hipocamp_app.privacy.developerOption
 import com.example.hipocamp_app.privacy.rooted
 import com.example.hipocamp_app.ui.login.login
+import com.example.hipocamp_app.utils.developer_option
+import com.example.hipocamp_app.utils.rooted_option
 import timber.log.Timber
 
 class MainActivity : AppCompatActivity() {
-    var rooted = rooted()
+    var rooted_ = rooted()
     var developerOption: developerOption = developerOption()
 
 
@@ -20,14 +21,16 @@ class MainActivity : AppCompatActivity() {
 
         val developerOptionsEnabled =developerOption.isDeveloperOptionsEnabled(applicationContext)
         //root check condition
-        if(!rooted.isRootedDevice()){
+        if(!rooted_.isRootedDevice()){
             //Developer option check
             Timber.tag("developer_option").e("${developerOptionsEnabled}")
             if(developerOptionsEnabled){
                 Timber.tag("Developeroption").e("Developer option is On")
+                val developerOption = developer_option()
+                replaceFragment(developerOption)
             }
             else {
-                var login: login = login()
+                val login = login()
                 replaceFragment(login)
                 Timber.tag("Developeroption").e("Developer option is Off")
                 Timber.tag("PhoneStatus").e("Phone is not Rooted")
@@ -35,6 +38,8 @@ class MainActivity : AppCompatActivity() {
             }
         }else {
             Timber.tag("PhoneStatus").e("Phone is Rooted")
+            val rooted = rooted_option()
+            replaceFragment(rooted)
         }
 
     }
