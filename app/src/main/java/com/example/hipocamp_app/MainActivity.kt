@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.hipocamp_app.privacy.developerOption
 import com.example.hipocamp_app.privacy.rooted
-import com.example.hipocamp_app.ui.login.login
+import com.example.hipocamp_app.ui.login
 import com.example.hipocamp_app.utils.InternetConnectivity
 import com.example.hipocamp_app.utils.developer_option
 import com.example.hipocamp_app.utils.rooted_option
@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
             //Developer option check
             Timber.tag("developer_option").e("${developerOptionsEnabled}")
             if(developerOptionsEnabled){
+
                 Timber.tag("Developeroption").e("Developer option is On")
                 val developerOption = developer_option()
                 replaceFragment(developerOption)
