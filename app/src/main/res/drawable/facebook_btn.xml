@@ -12,6 +12,6 @@
     <!-- The apple image -->
     <item
         android:id="@+id/apple_layer"
-        android:drawable="@drawable/google"
+        android:drawable="@drawable/facebook"
         android:gravity="center" />
 </layer-list>

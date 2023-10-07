@@ -15,5 +15,7 @@
     <string name="forgot_pass">Forgot Password?</string>
     <string name="login">Login</string>
     <string name="or_continue">- OR Continue with -</string>
+    <string name="create_an_account">Create An Account</string>
+    <string name="sign_up">Sign Up</string>
 
 </resources>
