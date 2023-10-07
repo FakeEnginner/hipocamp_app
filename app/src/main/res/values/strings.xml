@@ -17,5 +17,9 @@
     <string name="or_continue">- OR Continue with -</string>
     <string name="create_an_account">Create An Account</string>
     <string name="sign_up">Sign Up</string>
-
+    <string name="create_an_a">Create an \naccount</string>
+    <string name="cnf_password">ConfirmPassword</string>
+    <string name="by_clicking">By clicking the Register button, you agree to the public offer</string>
+    <string name="create_acco">Create Account</string>
+    <string name="i_already_h">I Already Have an Account</string>
 </resources>
