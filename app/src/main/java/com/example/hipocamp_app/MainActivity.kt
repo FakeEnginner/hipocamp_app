@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
 
                 Timber.tag("Developeroption").e("Developer option is On")
                 val developerOption = developer_option()
+//                  val developerOption = login()
                 replaceFragment(developerOption)
             }
             else {
