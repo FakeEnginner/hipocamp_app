@@ -22,4 +22,7 @@
     <string name="by_clicking">By clicking the Register button, you agree to the public offer</string>
     <string name="create_acco">Create Account</string>
     <string name="i_already_h">I Already Have an Account</string>
+    <string name="forgot_password">Forgot\npassword?</string>
+    <string name="we_will_sen">* We will send you a message to set or reset your new password</string>
+    <string name="submit">Submit</string>
 </resources>

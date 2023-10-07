@@ -34,6 +34,10 @@
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">#676767</item>
     </style>
+    <style name="we_will_sen">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FF4B26</item>
+    </style>
 
 
 </resources>
