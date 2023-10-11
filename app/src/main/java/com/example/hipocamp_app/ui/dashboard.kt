@@ -20,10 +20,6 @@ class dashboard : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.dashboard, container, false)
 //        val bottomNavigationView = view.findViewById<BottomNavigationView>(R.id.)
-
         return view
-    }
-    private fun replaceFragment(fragment: Fragment){
-        fragmentManager?.beginTransaction()?.replace(R.id.fragment_container,fragment)?.addToBackStack("null")?.commit()
     }
 }

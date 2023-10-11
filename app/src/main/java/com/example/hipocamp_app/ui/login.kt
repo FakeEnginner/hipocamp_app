@@ -7,10 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.annotation.ContentView
 import androidx.fragment.app.Fragment
 import com.example.hipocamp_app.R
+import com.example.hipocamp_app.utils.Helper
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class login : Fragment(){
+    val helper = Helper()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -26,17 +30,17 @@ class login : Fragment(){
         val signup = view.findViewById<TextView>(R.id.sign_up)
         val forgotpassword = view.findViewById<TextView>(R.id.forgot_pass)
         loginbtn.setOnClickListener{
-            replaceFragment(dashboard())
+
+           val activity = requireActivity()
+            activity.setContentView(R.layout.dashboard_activity)
+            helper?.replacetoDashboardFragment(dashboard(),requireFragmentManager())
         }
         signup.setOnClickListener {
-            replaceFragment(signup())
+            helper?.replaceFragment(signup(),requireFragmentManager())
         }
         forgotpassword.setOnClickListener {
-            replaceFragment(ForgotPassword())
+            helper?.replaceFragment(ForgotPassword(),requireFragmentManager())
         }
         return view
-    }
-    private fun replaceFragment(fragment: Fragment){
-        fragmentManager?.beginTransaction()?.replace(R.id.fragment_container,fragment)?.addToBackStack("null")?.commit()
     }
 }
