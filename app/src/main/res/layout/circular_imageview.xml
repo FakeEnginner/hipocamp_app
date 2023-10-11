@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="50dp"
+    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="false"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardElevation="2dp"
+    android:layout_gravity="center">
+
+<ImageView
+android:id="@+id/circularImageView"
+android:layout_width="100dp"
+android:layout_height="100dp"
+android:scaleType="centerCrop"
+android:src="@drawable/google"
+android:layout_gravity="center"
+tools:src="@tools:sample/avatars" />
+</androidx.cardview.widget.CardView>
+
+<!--<include layout="@layout/circular_image_view_layout" />-->
