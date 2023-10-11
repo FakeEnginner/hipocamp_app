@@ -20,4 +20,7 @@ class ForgotPassword : Fragment() {
 
         return view
     }
+    private fun replaceFragment(fragment: Fragment){
+        fragmentManager?.beginTransaction()?.replace(R.id.fragment_container,fragment)?.addToBackStack("null")?.commit()
+    }
 }
