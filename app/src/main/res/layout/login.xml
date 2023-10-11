@@ -136,6 +136,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/Login"
             android:src="@drawable/login_btn"/>
 
         <LinearLayout
@@ -146,7 +147,7 @@
             android:orientation="horizontal">
 
 
-            <EditText
+            <TextView
                 android:id="@+id/Loginbtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
