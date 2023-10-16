@@ -1,6 +1,7 @@
 package com.example.hipocamp_app.ui
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,6 +11,7 @@ import android.widget.TextView
 import androidx.annotation.ContentView
 import androidx.fragment.app.Fragment
 import com.example.hipocamp_app.R
+import com.example.hipocamp_app.dashboardActivity
 import com.example.hipocamp_app.utils.Helper
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -31,9 +33,10 @@ class login : Fragment(){
         val forgotpassword = view.findViewById<TextView>(R.id.forgot_pass)
         loginbtn.setOnClickListener{
 
-           val activity = requireActivity()
-            activity.setContentView(R.layout.dashboard_activity)
-            helper?.replacetoDashboardFragment(dashboard(),requireFragmentManager())
+//            activity.setContentView(R.layout.dashboard_activity)
+//            helper?.replacetoDashboardFragment(dashboard(),requireFragmentManager())
+            val intent = Intent(requireActivity(), dashboardActivity::class.java)
+            startActivity(intent)
         }
         signup.setOnClickListener {
             helper?.replaceFragment(signup(),requireFragmentManager())

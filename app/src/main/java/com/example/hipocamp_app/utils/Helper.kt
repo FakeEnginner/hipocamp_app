@@ -18,10 +18,10 @@ class Helper {
 
     @SuppressLint("SuspiciousIndentation")
     fun replacetoDashboardFragment(fragment: Fragment,fragmentManager: FragmentManager){
-            fragmentManager?.beginTransaction()
-                ?.replace(R.id.dashboard_container,fragment)
-                ?.addToBackStack("null")
-                ?.commit()
+            fragmentManager.beginTransaction()
+                .replace(R.id.dashboard_container,fragment)
+                .addToBackStack("null")
+                .commit()
     }
 
 }
