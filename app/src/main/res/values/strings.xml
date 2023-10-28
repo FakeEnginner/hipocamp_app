@@ -29,4 +29,6 @@
     <string name="chat">Chats</string>
     <string name="community">Community</string>
     <string name="Experts">Experts</string>
+    <string name="firstname">FirstName</string>
+    <string name="lastname">LastName</string>
 </resources>
