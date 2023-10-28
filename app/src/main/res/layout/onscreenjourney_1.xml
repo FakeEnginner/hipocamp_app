@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/android_lar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToOutline="true"
+    android:background="#EFCEE0"
+    >
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+    <View
+        android:id="@+id/polygon_1"
+        android:layout_width="112dp"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/polygon_onscreen" />
+
+    <View
+        android:id="@+id/line_1"
+        android:layout_width="90dp"
+        android:layout_height="189dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="321dp"
+        android:layout_marginTop="51dp"
+        android:background="@drawable/line_1" />
+
+    <View
+        android:id="@+id/ellipse_2"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/circle1" />
+
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+
+    <View
+        android:id="@+id/meditation_"
+        android:layout_width="wrap_content"
+        android:layout_height="305dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="118dp"
+        android:background="@drawable/meditation" />
+
+    <View
+        android:id="@+id/ellipse_3"
+        android:layout_width="28dp"
+        android:layout_height="27dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="365dp"
+        android:layout_marginTop="416dp"
+        android:background="@drawable/ellipse3" />
+
+    <View
+        android:id="@+id/ellipse_1"
+        android:layout_width="64dp"
+        android:layout_height="122dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="361dp"
+        android:background="@drawable/ellipse_1" />
+
+    <TextView
+        android:id="@+id/express_you"
+        android:layout_width="221dp"
+        android:layout_height="88dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="457dp"
+        android:gravity="top"
+        android:text="@string/express_you"
+        android:textAppearance="@style/express_you" />
+
+    <TextView
+        android:id="@+id/lorem_ipsum"
+        android:layout_width="302dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="560dp"
+        android:gravity="top"
+        android:lineSpacingExtra="6sp"
+        android:text="@string/lorem_ipsum"
+        android:textAppearance="@style/lorem_ipsum"
+        android:translationY="-2.97sp" />
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="33dp"
+        android:layout_height="28dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="692dp"
+        android:gravity="top"
+        android:lineSpacingExtra="6sp"
+        android:text="@string/skip"
+        android:textAppearance="@style/skip"
+        android:translationY="-2.97sp" />
+</RelativeLayout>

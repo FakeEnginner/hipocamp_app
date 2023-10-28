@@ -31,4 +31,7 @@
     <string name="Experts">Experts</string>
     <string name="firstname">FirstName</string>
     <string name="lastname">LastName</string>
+    <string name="express_you"><b>Express Your \nCreativity</b></string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur \nadipiscing elit, sed do eiusmod tempor\nincididunt ut labore et dolore magna aliqua. Ut enim ad</string>
+    <string name="skip"><b>Skip</b></string>
 </resources>
