@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/android_lar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToOutline="true"
+    android:background="#FFE790"
+    >
+
+    <View
+        android:id="@+id/polygon_1"
+        android:layout_width="90.84dp"
+        android:layout_height="55.35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/polygon2_onscreen" />
+
+    <View
+        android:id="@+id/ellipse_3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="49dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="107dp"
+        android:background="@drawable/ellipse3"
+        />
+
+    <View
+        android:id="@+id/line_1"
+        android:layout_width="91dp"
+        android:layout_height="115dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="321dp"
+        android:layout_marginTop="66dp"
+        android:background="@drawable/sideline_2" />
+
+    <View
+        android:id="@+id/meditation_"
+        android:layout_width="396dp"
+        android:layout_height="288dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="129dp"
+        android:background="@drawable/anxiety" />
+
+    <View
+        android:id="@+id/ellipse_2"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="354dp"
+        android:layout_marginTop="438dp"
+        android:background="@drawable/circle1" />
+
+    <View
+        android:id="@+id/ellipse_1"
+        android:layout_width="134.82dp"
+        android:layout_height="109.17dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="-17.88dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="372dp"
+        android:background="@drawable/ellipse2"
+        />
+
+    <TextView
+        android:id="@+id/express_you"
+        android:layout_width="221dp"
+        android:layout_height="88dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="496dp"
+        android:gravity="top"
+        android:text="@string/express_you"
+        android:textAppearance="@style/express_you" />
+
+    <TextView
+        android:id="@+id/lorem_ipsum"
+        android:layout_width="302dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="585dp"
+        android:gravity="top"
+        android:lineSpacingExtra="6sp"
+        android:text="@string/lorem_ipsum"
+        android:textAppearance="@style/lorem_ipsum"
+        android:translationY="-2.97sp" />
+
+
+    <View
+        android:id="@+id/skip"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="695dp"
+        android:background="@drawable/backlogo"
+        android:gravity="top"
+        android:lineSpacingExtra="6sp"
+        android:textAppearance="@style/skip"
+        android:translationY="-2.97sp" />
+
+
+</RelativeLayout>
