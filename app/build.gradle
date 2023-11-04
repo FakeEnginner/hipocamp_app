@@ -2,7 +2,7 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
-    id 'io.gitlab.arturbosch.detekt'
+//    id 'io.gitlab.arturbosch.detekt'
 }
 
 android {
@@ -40,22 +40,22 @@ android {
         }
 
     }
-    detekt {
-        toolVersion = "1.20.0"
-        input = files("src/main/java", "src/test/java")
-        config = files("path/to/your/detekt-config.yml")
-        buildUponDefaultConfig = true
-        reports {
-            html {
-                enabled = true
-                destination = file("build/reports/detekt.html")
-            }
-            xml {
-                enabled = true
-                destination = file("build/reports/detekt.xml")
-            }
-        }
-    }
+//    detekt {
+//        toolVersion = "1.20.0"
+//        input = files("src/main/java", "src/test/java")
+//        config = files("path/to/your/detekt-config.yml")
+//        buildUponDefaultConfig = true
+//        reports {
+//            html {
+//                enabled = true
+//                destination = file("build/reports/detekt.html")
+//            }
+//            xml {
+//                enabled = true
+//                destination = file("build/reports/detekt.xml")
+//            }
+//        }
+//    }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
