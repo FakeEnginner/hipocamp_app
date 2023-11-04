@@ -38,7 +38,6 @@ class MainActivity : AppCompatActivity() {
 //                val developerOption = developer_option()
                   val developerOption = login()
                 helper.replaceFragment(developerOption, supportFragmentManager)
-//                replaceFragment(developerOption)
             }
             else {
                 val login = login()
@@ -51,7 +50,6 @@ class MainActivity : AppCompatActivity() {
             Timber.tag("PhoneStatus").e("Phone is Rooted")
             val rooted = rooted_option()
             helper.replaceFragment(rooted,supportFragmentManager)
-//            replaceFragment(rooted)
         }
 
         val internetConnectivity = InternetConnectivity()
