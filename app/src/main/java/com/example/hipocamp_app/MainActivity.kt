@@ -6,6 +6,8 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
+import androidx.viewpager.widget.ViewPager
+import com.example.hipocamp_app.adapter.OnboardingAdapter
 import com.example.hipocamp_app.privacy.developerOption
 import com.example.hipocamp_app.privacy.rooted
 import com.example.hipocamp_app.ui.login
@@ -22,10 +24,14 @@ class MainActivity : AppCompatActivity() {
     val helper = Helper()
 
 
+
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
 
         val developerOptionsEnabled =developerOption.isDeveloperOptionsEnabled(applicationContext)
         //root check condition
